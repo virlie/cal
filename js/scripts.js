@@ -33,4 +33,12 @@ $(document).ready(function() {
     var resultM = multiply(numberM1, numberM2);
       $("#outputmult").text(resultM);
   });
+
+  $("form#divide").submit(function(event) {
+     event.preventDefault();
+    var numberD1 = parseInt($("#divide1").val());
+    var numberD2 = parseInt($("#divide2").val());
+    var resultD = divide(numberD1, numberD2);
+      $("#outputdiv").text(resultD);
+  })
 });
