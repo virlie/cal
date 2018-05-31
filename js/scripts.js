@@ -34,7 +34,7 @@ $(document).ready(function() {
       $("#outputmult").text(resultM);
   });
 
-  $("form#divide").submit(function(event) {
+  $("form#division").submit(function(event) {
      event.preventDefault();
     var numberD1 = parseInt($("#divide1").val());
     var numberD2 = parseInt($("#divide2").val());
