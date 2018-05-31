@@ -1,6 +1,7 @@
 var add = function(number1, number2) {
   return number1 + number2;
 };
+
 var subtract = function(number1, number2) {
   return number1 - number2;
 };
@@ -23,11 +24,13 @@ $(document).ready(function() {
     var result = add(number1, number2);
     $("#outputadd").text(result);
   });
+
   $("form#multiply").submit(function(event) {
      event.preventDefault();
-    var number1 = parseInt($("#multi1").val());
-    var number2 = parseInt($("#multi2").val());
-    var result = multiply(number1, number2);
-      $("#outputmult").text(result);
+    var numberM1 = parseInt($("#multi1").val());
+    var numberM2 = parseInt($("#multi2").val());
+    console.log(numberM1);
+    var resultM = multiply(numberM1, numberM2);
+      $("#outputmult").text(resultM);
   });
 });
